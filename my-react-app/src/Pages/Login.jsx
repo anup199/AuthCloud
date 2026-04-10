@@ -19,7 +19,7 @@ const Login = ({ setIsAuthenticated }) => {
     e.preventDefault();
 
     try {
-      const res = await axios.post("http://localhost:5000/api/login", form);
+      const res = await axios.post("/api/login", form);
 
       if (res.data.success) {
         setIsAuthenticated(true);
