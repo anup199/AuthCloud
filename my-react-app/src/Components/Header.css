@@ -1,0 +1,8 @@
+.header_Nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pointer{
+    cursor: pointer;
+}
