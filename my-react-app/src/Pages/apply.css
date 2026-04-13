@@ -1,0 +1,47 @@
+.apply-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f4f6f8;
+}
+
+.apply-card {
+  background: #fff;
+  padding: 25px;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.apply-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.apply-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.apply-card input,
+.apply-card textarea,
+.apply-card select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.apply-card button {
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.apply-card button:hover {
+  background: #0056b3;
+}
