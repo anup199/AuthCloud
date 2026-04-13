@@ -10,11 +10,13 @@ app.use(express.json());
 
 
 const SECRET_KEY = process.env.SECRET_KEY;
-// Routes
-app.use('/api/contact', require('./routes/contact'));
-app.use('/api/login', require('./routes/User'));
+// Routes (combined)
+// app.use('/api', require('./routes/api'));
 
 
+// new route with controller working
+const applyRoutes = require('./routes/applyRoutes');
+app.use('/api', applyRoutes);
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI)
